@@ -1,14 +1,28 @@
 ---
 layout: layouts/base.njk
 ---
+
 <article class="post-page">
   <div class="container narrow">
     <a class="back-link" href="/WDR5S/updates/">← Back to updates</a>
-    <p class="eyebrow">{{ category | default: "Update" }}</p>
+
+    <p class="eyebrow">Update</p>
+
     <h1>{{ title }}</h1>
     <p class="post-date">{{ date | readableDate }}</p>
-    {% if image %}<img class="post-hero-image" src="{{ image }}" alt="{{ imageAlt }}">{% endif %}
-    <div class="post-content">{{ content | safe }}</div>
-    <div class="post-bottom-card"><h2>Found this helpful?</h2><p>If your family has a WDR5 diagnosis, we would love to hear from you.</p><a class="button" href="/WDR5S/registry/">Join the family registry</a></div>
+
+    {% if image %}
+      <img class="post-hero-image" src="{{ image }}" alt="{{ imageAlt }}">
+    {% endif %}
+
+    <div class="post-content">
+      {{ content | safe }}
+    </div>
+
+    <div class="post-bottom-card">
+      <h2>Found this helpful?</h2>
+      <p>If your family has a WDR5 diagnosis, we would love to hear from you.</p>
+      <a class="button" href="/WDR5S/registry/">Join the family registry</a>
+    </div>
   </div>
 </article>

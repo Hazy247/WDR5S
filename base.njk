@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title | default: "WDR5 Connect" }}</title>
+  <meta name="description" content="{{ description | default: "A family-led WDR5 support and information website connecting families, sharing updates and signposting research." }}">
+  <link rel="stylesheet" href="/WDR5/assets/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/WDR5/">
+      <span class="brand-mark">W</span>
+      <span class="brand-text"><strong>WDR5 Connect</strong><small>Families • Research • Hope</small></span>
+    </a>
+    <nav class="site-nav">
+      <a href="/WDR5/">Home</a>
+      <a href="/WDR5/about/">About WDR5</a>
+      <a href="/WDR5/story/">Our Story</a>
+      <a href="/WDR5/updates/">Updates</a>
+      <a href="/WDR5/resources/">Resources</a>
+      <a href="/WDR5/contact/">Contact</a>
+      <a class="nav-cta" href="/WDR5/registry/">Join the Registry</a>
+    </nav>
+  </div>
+</header>
+<main id="main-content">{{ content | safe }}</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><h2>WDR5 Connect</h2><p>A family-led website helping people affected by WDR5-related neurodevelopmental disorder find information, support and each other.</p></div>
+    <div><h3>Important</h3><p>This website shares family experience and signposts research. It is not medical advice. Always speak to your clinical team.</p></div>
+    <div><h3>Quick links</h3><p><a href="/WDR5/registry/">Join the registry</a><br><a href="/WDR5/contact/">Contact us</a><br><a href="/WDR5/updates/">Latest updates</a></p></div>
+  </div>
+</footer>
+</body>
+</html>

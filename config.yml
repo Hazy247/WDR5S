@@ -1,0 +1,25 @@
+backend:
+  name: github
+  repo: Hazy247/WDR5
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/WDR5/assets/images"
+
+collections:
+  - name: "updates"
+    label: "Updates"
+    folder: "updates"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Category", name: "category", widget: "select", options: ["Family Stories", "Research", "Community News", "Resources"] }
+      - { label: "Card Image", name: "image", widget: "image", required: false }
+      - { label: "Image Alt Text", name: "imageAlt", widget: "string", required: false }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/update.njk" }
+      - { label: "Body", name: "body", widget: "markdown" }

@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title | default: "WDR5 Connect" }}</title>
-  <meta name="description" content="{{ description | default: "A family-led WDR5 support and information website connecting families, sharing updates and signposting research." }}">
+  <title>WDR5 Connect</title>
+  <meta name="description" content="A family-led WDR5 support and information website.">
   <link rel="stylesheet" href="/WDR5S/assets/styles.css">
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to content</a>
+
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/WDR5S/">
       <span class="brand-mark">W</span>
-      <span class="brand-text"><strong>WDR5 Connect</strong><small>Families • Research • Hope</small></span>
+      <span class="brand-text">
+        <strong>WDR5 Connect</strong>
+        <small>Families • Research • Hope</small>
+      </span>
     </a>
+
     <nav class="site-nav">
       <a href="/WDR5S/">Home</a>
       <a href="/WDR5S/about/">About WDR5</a>
@@ -26,13 +30,31 @@
     </nav>
   </div>
 </header>
-<main id="main-content">{{ content | safe }}</main>
+
+<main>
+  {{ content | safe }}
+</main>
+
 <footer class="site-footer">
   <div class="container footer-grid">
-    <div><h2>WDR5 Connect</h2><p>A family-led website helping people affected by WDR5-related neurodevelopmental disorder find information, support and each other.</p></div>
-    <div><h3>Important</h3><p>This website shares family experience and signposts research. It is not medical advice. Always speak to your clinical team.</p></div>
-    <div><h3>Quick links</h3><p><a href="/WDR5S/registry/">Join the registry</a><br><a href="/WDR5S/contact/">Contact us</a><br><a href="/WDR5S/updates/">Latest updates</a></p></div>
+    <div>
+      <h2>WDR5 Connect</h2>
+      <p>A family-led website helping people affected by WDR5-related disorder find information, support and each other.</p>
+    </div>
+    <div>
+      <h3>Important</h3>
+      <p>This website shares family experience and signposts research. It is not medical advice.</p>
+    </div>
+    <div>
+      <h3>Quick links</h3>
+      <p>
+        <a href="/WDR5S/registry/">Join the registry</a><br>
+        <a href="/WDR5S/contact/">Contact us</a><br>
+        <a href="/WDR5S/updates/">Latest updates</a>
+      </p>
+    </div>
   </div>
 </footer>
+
 </body>
 </html>

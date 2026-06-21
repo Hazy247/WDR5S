@@ -1,10 +1,10 @@
 backend:
   name: github
-  repo: Hazy247/WDR5
+  repo: Hazy247/WDR5S
   branch: main
 
 media_folder: "assets/images"
-public_folder: "/WDR5/assets/images"
+public_folder: "/WDR5S/assets/images"
 
 collections:
   - name: "updates"
